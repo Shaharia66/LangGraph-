@@ -16,6 +16,7 @@ class State(TypedDict):                              # The shared whiteboard
 # ============================================================
 # 3. DEFINE THE NODES
 # ============================================================
+
 def node_a(state: State) -> State:                   # First node
     print(f"Adding 'A' to {state['nlist']}")         # Show what the State looked like when this node started
     return State(nlist=["A"])                        # Add "A" (the reducer appends it to the old list)
